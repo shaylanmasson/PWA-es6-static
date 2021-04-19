@@ -20,7 +20,7 @@ module.exports = class extends Page {
             <p>${oEntity.kit_date}</p>
             <p>${oEntity.kit_location}</p>
             <p>${oEntity.kit_price}</p>
-            <form action="https://localhost:3001/payment" method="post">
+            <form action="https://localhost:3002/payment" method="post">
             <input type="hidden" name="title" value="${oEntity.title}" />
             <input type="hidden" name="price" value="${oEntity.price}" />
             <input type="tel" placeholder="enter your number"/>
