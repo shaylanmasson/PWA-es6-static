@@ -22,7 +22,7 @@ module.exports = class extends Page {
             <p>${oEntity.kit_price}</p>
             <form action="https://stormy-savannah-55988.herokuapp.com/payment" method="post">
             <input type="hidden" name="title" value="${oEntity.title}" />
-            <input type="hidden" name="price" value="${oEntity.price}" />
+            <input type="hidden" name="price" value="${oEntity.kit_price}" />
             <input type="tel" placeholder="enter your number"/>
             <button type="submit">Order now</button>
             </form>
